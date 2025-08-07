@@ -2,9 +2,11 @@ import { useState } from "react"
 import products from "./data/products"
 import ProductCard from "./components/ProductCard"
 import Cart from "./components/Cart"
+import ProductModal from "./components/ProductModal"
 
 const App = () => {
   const [cart, setCart] = useState([])
+  const [selectedProduct, setSelectedProduct] = useState(null)
 
   const addToCart = (product) => {
     setCart([...cart, product])
@@ -21,7 +23,12 @@ const App = () => {
       <div className="grid md:grid-cols-4 gap-6">
         <div className="md:col-span-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {products.map(product => (
-            <ProductCard key={product.id} product={product} addToCart={addToCart} />
+            <ProductCard
+              key={product.id}
+              product={product}
+              addToCart={addToCart}
+              onPreview={() => setSelectedProduct(product)}
+            />
           ))}
         </div>
 
@@ -29,6 +36,12 @@ const App = () => {
           <Cart cart={cart} removeFromCart={removeFromCart} />
         </div>
       </div>
+
+      <ProductModal
+        product={selectedProduct}
+        onClose={() => setSelectedProduct(null)}
+        addToCart={addToCart}
+      />
     </div>
   )
 }
