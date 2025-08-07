@@ -5,6 +5,7 @@ const products = [
     price: 25,
     image: "https://images.unsplash.com/photo-1571455786673-9d9d6c194f90?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Camiseta cómoda y moderna para amantes de React.",
+    category: "ropa",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const products = [
     price: 15,
     image: "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Gorra para desarrolladores fanáticos de JavaScript.",
+    category: "ropa",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const products = [
     price: 5,
     image: "https://plus.unsplash.com/premium_photo-1683120940374-e3f7465bbfa9?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Pegatina duradera para tu laptop o escritorio.",
+    category: "stickers",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const products = [
     price: 18,
     image: "https://images.unsplash.com/photo-1671068514669-8134a08ca1a2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Mousepad para escritorio cómodo y ágil para resolver tareas.",
+    category: "accesorios",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const products = [
     price: 12,
     image: "https://images.unsplash.com/photo-1586904118338-8ce35f4417dc?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Taza para beber tus bebidas calientes o heladas favoritas",
+    category: "tazas",
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const products = [
     price: 10,
     image: "https://images.unsplash.com/photo-1623697899811-f2403f50685e?q=80&w=403&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Libreta para hacer anotaciones de cosas importantes",
+    category: "papelería",
   },
 ]
 

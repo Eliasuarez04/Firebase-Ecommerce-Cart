@@ -7,6 +7,7 @@ import ProductModal from "./components/ProductModal"
 const App = () => {
   const [cart, setCart] = useState([])
   const [selectedProduct, setSelectedProduct] = useState(null)
+  const [category, setCategory] = useState("todos")
 
   const addToCart = (product) => {
     setCart([...cart, product])
@@ -16,13 +17,37 @@ const App = () => {
     setCart(cart.filter(item => item.id !== id))
   }
 
+  const categories = ["todos", ...new Set(products.map(p => p.category))]
+
+  const filteredProducts =
+    category === "todos"
+      ? products
+      : products.filter((p) => p.category === category)
+
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-4xl font-bold text-center text-blue-700 mb-8">Mini E-commerce</h1>
+      <h1 className="text-4xl font-bold text-center text-blue-700 mb-6">Mini E-commerce</h1>
+
+      {/* Filtros */}
+      <div className="flex flex-wrap justify-center gap-3 mb-6">
+        {categories.map((cat, i) => (
+          <button
+            key={i}
+            onClick={() => setCategory(cat)}
+            className={`px-4 py-2 rounded-full border ${
+              category === cat
+                ? "bg-blue-600 text-white"
+                : "bg-white text-blue-700 hover:bg-blue-100"
+            } transition`}
+          >
+            {cat.charAt(0).toUpperCase() + cat.slice(1)}
+          </button>
+        ))}
+      </div>
 
       <div className="grid md:grid-cols-4 gap-6">
         <div className="md:col-span-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {products.map(product => (
+          {filteredProducts.map(product => (
             <ProductCard
               key={product.id}
               product={product}
