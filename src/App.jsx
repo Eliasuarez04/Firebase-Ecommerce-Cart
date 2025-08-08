@@ -3,11 +3,13 @@ import products from "./data/products"
 import ProductCard from "./components/ProductCard"
 import Cart from "./components/Cart"
 import ProductModal from "./components/ProductModal"
+import { usePersistentCart } from './hooks/usePersistentCart'
 
 const App = () => {
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = usePersistentCart()
   const [selectedProduct, setSelectedProduct] = useState(null)
   const [category, setCategory] = useState("todos")
+  
 
   const addToCart = (product) => {
     setCart([...cart, product])
