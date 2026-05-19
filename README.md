@@ -7,7 +7,7 @@
 
 A modern E-Commerce application demonstrating real-time data persistence and state management by integrating a React frontend with a Firebase backend.
 
-🔗 **[Live Demo: Try the App Here](https://ecommerce-app-dusky-gamma.vercel.app/)**
+🔗 **[Live Demo: Try the App Here](https://ecommerce-app-seven-rho.vercel.app/)**
 
 ## ✨ Key Features
 * **Firebase Backend Integration:** The shopping cart is directly connected to a Firebase NoSQL database, ensuring cart data persists across browser sessions in real-time.
