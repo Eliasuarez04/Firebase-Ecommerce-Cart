@@ -1,12 +1,41 @@
-# React + Vite
+# 🛍️ React + Firebase Persistent E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Status](https://img.shields.io/badge/Status-Completed-success)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-Currently, two official plugins are available:
+A modern E-Commerce application demonstrating real-time data persistence and state management by integrating a React frontend with a Firebase backend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **[Live Demo: Try the App Here](https://ecommerce-app-dusky-gamma.vercel.app/)**
 
-## Expanding the ESLint configuration
+## ✨ Key Features
+* **Firebase Backend Integration:** The shopping cart is directly connected to a Firebase NoSQL database, ensuring cart data persists across browser sessions in real-time.
+* **Dynamic UI:** Built with Tailwind CSS for a fully responsive, mobile-first design.
+* **Optimized Build:** Bootstrapped with Vite for high performance and fast hot-module replacement.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+* **Frontend:** React.js, JavaScript (ES6+), Tailwind CSS
+* **Backend as a Service (BaaS):** Firebase (Firestore / Realtime DB)
+* **Build Tool:** Vite
+
+## 🚀 Installation & Local Setup
+
+To run this project locally, you will need to set up a free Firebase project.
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/Eliasuarez04/react-firebase-store.git](https://github.com/Eliasuarez04/react-firebase-store.git)
+
+2. Navigate to the directory:
+   cd react-firebase-store
+
+3. Install the dependencies:
+   
+4. Environment Variables: Create a .env file in the root directory and add your Firebase configuration:
+   VITE_FIREBASE_API_KEY=your_api_key
+   VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+   VITE_FIREBASE_PROJECT_ID=your_project_id
+
+5. Start the development server:
+   npm run dev
