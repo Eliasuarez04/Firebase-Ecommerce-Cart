@@ -25,7 +25,7 @@ To run this project locally, you will need to set up a free Firebase project.
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/Eliasuarez04/Firebase-Ecommerce-Cart](https://github.com/Eliasuarez04/Firebase-Ecommerce-Cart)
+   git clone [https://github.com/Eliasuarez04/Firebase-Ecommerce-Cart.git](https://github.com/Eliasuarez04/Firebase-Ecommerce-Cart.git)
 
 2. Navigate to the directory:
    cd react-firebase-store
